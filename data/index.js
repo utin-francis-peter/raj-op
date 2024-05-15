@@ -878,7 +878,7 @@ export const ongoingProjectsContents = [
     details: {
       logo: "/ongoing-projects/harmony/harmony-logo.png",
       overview:
-        "'Raj Harmony' project is situated in the Ponda city which is geographically located in the heart of Goa. It is a perfect blend of Comfort, Life, and Celebrations. All the amenities will make living of the customer 'comfortable'. Major Banks, Hospitals, clinics’ and pharmacies, Supermarkets and Temples are in the close proximity. All these factors make your 'Life' easy and relaxing. You can 'Celebrate' the togetherness in the clubhouse of the project. In short project is combination of good quality construction with state of the art amenities, excellent service, and accessibility to everything you need.",
+        "'Raj Harmony' project is situated in the Ponda city which is geographically located in the heart of Goa. It is a perfect blend of Comfort, Life, and Celebrations. All the amenities will make the living of the customer 'comfortable'. Major Banks, Hospitals, clinics’ and pharmacies, Supermarkets and Temples are in close proximity. All these factors make your 'Life' easy and relaxing. You can 'Celebrate' the togetherness in the clubhouse of the project. In short, the project is a combination of good quality construction with state of the art amenities, excellent service, and accessibility to everything you need.",
       blogPost: {
         title: "Read blog on Raj Harmony",
         href: "/blog/raj-harmony-harmony-of-life-comfort-and-celebrations",
