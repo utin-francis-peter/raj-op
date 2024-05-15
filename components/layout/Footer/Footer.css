@@ -1,0 +1,40 @@
+#footer {
+  background-color: #0d2b35;
+  padding: 80px 0 60px 0;
+
+  background-image: url("../../../public/footerbg-new.svg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 50;
+}
+#footer h4 {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  #footer h4 {
+    font-size: 20px;
+  }
+}
+
+#footer p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #ababab;
+}
+#footer p a {
+  color: #ababab;
+}
+#footer a:hover,
+#footer a:focus {
+  color: #ffffff;
+}
+#footer .closure,
+#footer .credits {
+  /* margin-top: 70px; */
+  color: white;
+  font-weight: bold;
+}

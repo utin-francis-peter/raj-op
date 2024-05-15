@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.grid-container {
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+
+  max-width: 75rem;
+  /* border: 2px solid red; */
+}

@@ -1,0 +1,76 @@
+#hero .cinzel {
+  font-family: "Cinzel", serif;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.94);
+  padding: 1rem 0;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+
+  /* border: 1px solid red; */
+}
+.transition-effect {
+  transition-delay: 0.3s;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+// #hero {
+//   height: 90vh;
+//   position: relative;
+
+//   background: url("../../../public/hero-mobile.webp");
+//   background-position: center;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+
+//   @media screen and (min-width:1024px){
+//   height: calc(90vh - 100px);
+//   background: url("../../../public/hero-desktop.webp");
+
+//   }
+// }
+
+// #hero .h1-group h1 {
+//   font-family: "Cinzel", serif;
+// }
+// #hero .h1-group h1 span {
+//   display: block;
+//   font-size: 30px;
+//   font-weight: normal;
+// }
+// #hero .h1-group p {
+//   font-weight: normal;
+// }
+// #hero h1 {
+//   font-size: 60px;
+//   font-weight: 900;
+//   text-transform: uppercase;
+//   max-width: 700px;
+//   color: white;
+//   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.36);
+
+//   @media screen and (max-width: 768px) {
+//     font-size: 38px;
+//   }
+// }
+// #hero p {
+//   font-size: 24px;
+//   font-weight: 600;
+//   color: white;
+//   margin-left: 5px;
+// }
+// #hero p.about-img {
+//   position: absolute;
+//   right: 20px;
+//   bottom: 40px;
+//   font-size: 16px;
+// }
+

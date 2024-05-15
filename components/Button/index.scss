@@ -1,0 +1,49 @@
+.btn-component,
+.link-styles {
+  min-height: 40px;
+  background-color: #0d2b35;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  overflow: hidden;
+  //   border: 0;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s;
+  color: var(--initial-color);
+  position: relative;
+
+  & span {
+    position: relative;
+    z-index: 2;
+    padding: 0 20px;
+  }
+
+  ::before {
+    width: 0;
+    height: 100%;
+    background: var(--before-bg-gradient);
+    // border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    content: "";
+    transition: 0.4s;
+  }
+
+  &:hover,
+  &:focus {
+    transition: 0.3s;
+    background-color: #0d2b35;
+    color: #0d2b35;
+
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+.link-styles {
+  text-decoration: none;
+}
