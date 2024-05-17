@@ -23,6 +23,7 @@
     "react-hook-form": "^7.51.1",
     "react-loader-spinner": "^6.1.6",
     "sass": "^1.69.7",
+    "sharp": "^0.33.4",
     "sonner": "^1.4.41",
     "swiper": "^10.3.1"
   },

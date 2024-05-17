@@ -223,7 +223,7 @@ const Reviews = () => {
         // autoHeight
         autoplay={{ disableOnInteraction: true }}
       >
-        <div>
+        <div >
           {reviewsList.map((review) => (
             <SwiperSlide key={review.id} className="">
               {/* <h1 className="border border-purple-400">Testing...</h1> */}
