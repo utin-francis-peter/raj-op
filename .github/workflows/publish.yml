@@ -18,6 +18,8 @@ jobs:
 
       - name: Build
         run: npm run build # The build command of your project
+        env: 
+          NEXT_PUBLIC_SANITY_PROJECT_ID: ${{ secrets.NEXT_PUBLIC_SANITY_PROJECT_ID }}
 
       - name: Push
         uses: s0/git-publish-subdir-action@develop
