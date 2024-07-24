@@ -35,9 +35,6 @@ jobs:
           git clean -fdx
           git checkout build || git checkout --orphan build
 
-      - name: Force add build output
-        run: git add -f .next/
-
       - name: List workspace contents
         run: ls -la
 
