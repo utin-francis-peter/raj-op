@@ -40,7 +40,7 @@ jobs:
 
       - name: Push changes to build branch
         run: |
-          git add build/
+          git add .next/
           git commit -m "Build: ${{ github.sha }} - ${{ github.event.head_commit.message }}"
           git push origin build
         env:
