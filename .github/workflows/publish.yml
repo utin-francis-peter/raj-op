@@ -27,13 +27,18 @@ jobs:
           NEXT_PUBLIC_RECAPTCHA_SITE_KEY: ${{ secrets.NEXT_PUBLIC_RECAPTCHA_SITE_KEY }}
           RECAPTCHA_SECRET_KEY: ${{ secrets.RECAPTCHA_SECRET_KEY }}
           NEXT_PUBLIC_BASE_URL: ${{ secrets.NEXT_PUBLIC_BASE_URL }}
-          run: echo "My project ID secret is ${{secrets.NEXT_PUBLIC_SANITY_PROJECT_ID}}"
 
-      - name: Push
-        uses: s0/git-publish-subdir-action@develop
+      - name: Create or switch to the build branch
+        run: |
+          git fetch origin build || git checkout --orphan build
+          git reset --hard
+          git clean -fdx
+          git checkout build || git checkout --orphan build
+
+      - name: Push changes to build branch
+        run: |
+          git add build/
+          git commit -m "Build: ${{ github.sha }} - ${{ github.event.head_commit.message }}"
+          git push origin build
         env:
-          REPO: self
-          BRANCH: build # The branch name where you want to push the assets
-          FOLDER: build # The directory where your assets are generated
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
-          MESSAGE: "Build: ({sha}) {msg}" # The commit message
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
