@@ -1,0 +1,29 @@
+{
+  "node_modules/@sanity/client/dist/index.browser.js -> ./_chunks-es/stegaEncodeSourceMap.js": {
+    "id": 4537,
+    "files": [
+      "static/chunks/537.2d9d72c90d7dd30d.js"
+    ]
+  },
+  "node_modules/@sanity/client/dist/index.browser.js -> @sanity/eventsource": {
+    "id": 4583,
+    "files": [
+      "static/chunks/583.c68c212cef9d7ba4.js"
+    ]
+  },
+  "node_modules/@sanity/visual-editing/dist/_chunks/index-CCPqf31P.js -> ./Overlays-bQSRS-P9.js": {
+    "id": 6940,
+    "files": [
+      "static/chunks/b8e21824.5281b9b277034366.js",
+      "static/chunks/106.6fb86eb7fc79607f.js"
+    ]
+  },
+  "node_modules/@sanity/visual-editing/dist/_chunks/index-CCPqf31P.js -> react-dom/client": {
+    "id": 4040,
+    "files": []
+  },
+  "node_modules/next-sanity/dist/visual-editing/index.js -> ./VisualEditing.js": {
+    "id": 5674,
+    "files": []
+  }
+}
