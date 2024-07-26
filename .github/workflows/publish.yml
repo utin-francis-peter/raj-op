@@ -28,16 +28,28 @@ jobs:
           RECAPTCHA_SECRET_KEY: ${{ secrets.RECAPTCHA_SECRET_KEY }}
           NEXT_PUBLIC_BASE_URL: ${{ secrets.NEXT_PUBLIC_BASE_URL }}
 
-      - name: Create or switch to the build branch
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-artifacts
+          path: production
+
+      - name: Checkout build branch
         run: |
           git fetch origin build || git checkout --orphan build
           git reset --hard
           git clean -fdx
           git checkout build || git checkout --orphan build
 
+      - name: Download build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: build-artifacts
+          path: ./build
+
       - name: Push changes to build branch
         run: |
-          git add production/
+          git add build/
           git commit -m "build: added build artifacts"
           git push origin build
         env:
