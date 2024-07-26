@@ -35,13 +35,10 @@ jobs:
           git clean -fdx
           git checkout build || git checkout --orphan build
 
-      - name: List workspace contents
-        run: ls -la
-
       - name: Push changes to build branch
         run: |
-          git add .next/
-          git commit -m "Build: ${{ github.sha }} - ${{ github.event.head_commit.message }}"
+          git add production/
+          git commit -m "build: added build artifacts"
           git push origin build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
