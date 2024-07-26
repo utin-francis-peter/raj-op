@@ -59,3 +59,19 @@ jobs:
           git push origin build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install Vercel CLI
+        run: npm install -g vercel
+
+      - name: Deploy to Vercel
+        run: vercel --prod --token ${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }} # Optional, if you have an organization ID
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }} # Optional, if you have a project ID
