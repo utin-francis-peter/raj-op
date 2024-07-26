@@ -47,6 +47,11 @@ jobs:
           name: build-artifacts
           path: ./build
 
+      - name: Configure Git
+        run: |
+          git config --global user.email "utinfrancis.dev@gmail.com"
+          git config --global user.name "utin-francis-peter"
+
       - name: Push changes to build branch
         run: |
           git add build/
