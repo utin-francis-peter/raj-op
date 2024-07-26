@@ -9,6 +9,7 @@ const nextConfig = {
       },
     ],
   },
+  distDir: "production",
 };
 
 module.exports = nextConfig;
